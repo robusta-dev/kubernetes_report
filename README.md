@@ -32,23 +32,9 @@ python generate_alert_report.py 30
 
 You can adjust the number of days as needed.
 
-### Output
+### Example Report Output
 The script generates a Prometheus alerts report in PDF format. An example report can be found here: [example_prometheus_alerts_report.pdf](example_prometheus_alerts_report.pdf).
 
-## Features
-- **Fetches alert data** from the Robusta API for the specified time range.
-- **Generates a detailed PDF report** with:
-  - Line chart: Alerts over time
-  - Pie chart: Alert distribution
-  - Summary table with enrichment recommendations
-- **Supports dynamic font scaling and chart sizing** via environment variables:
-  - `LINE_CHART_SCALE` (default: 0.8)
-  - `PIE_CHART_SCALE` (default: 0.8)
-  - `TABLE_FONT_SIZE` (default: 8)
-- **Splits data into 12-hour intervals** for better trend visualization.
-- **Enrichment detection**: Marks alerts as automatically enriched, recommended for enrichment, or needing customization.
-
-## Example Report Output
 The generated PDF includes:
 1. **Alerts Over Time (Line Chart)**: Shows alert frequency trends.
 2. **Alert Distribution (Pie Chart)**: Displays the proportion of each alert type.
